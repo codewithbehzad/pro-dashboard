@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles added -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Fonts added -->
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <!-- font awesome cdn added -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pro Dashboard</title>
+  </head>
+  <body>
+    <div class="right_sidebar">
+      <!-- rsb = right sidebar -->
+      <div class="rsb_top">
+        <a href="#" class="iconBx_m" id="logo">
+          <i class="fab fa-accusoft"></i>
+        </a>
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-th-large"></i>
+        </a>
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-plus-square"></i>
+        </a>
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-chart-simple"></i>
+        </a>
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-comment-dots"></i>
+        </a>
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-users"></i>
+        </a>
+      </div>
+      <div class="rsb_bottom">
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-bell"></i>
+        </a>
+        <a href="#" class="iconBx_m">
+          <i class="fas fa-cog"></i>
+        </a>
+      </div>
+    </div>
+    <main class="main_container">
+      <header class="mc_header">
+        <nav class="nav_arrows">
+          <div class="iconBx_m arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="iconBx_m arrow">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="iconBx_m arrow toggle">
+            <i class="fas fa-bars menu"></i>
+            <i class="fas fa-times close"></i>
+          </div>
+        </nav>
+        <a href="#" class="btn btn_blue">اتمام پروژه </a>
+      </header>
+      <div class="dashboard_overview">
+        <div class="title">
+          <h1>نگاه کلی بر پیشروی تیم</h1>
+          <a href="#" class="btn">آخرین پیشروی</a>
+        </div>
+        <div class="dashboard_overview_cards">
+          <div class="dashboard_overview_card">
+            <i class="fas fa-tachometer-alt icon_1"></i>
+            <p>سرعت تیم</p>
+            <h5>53</h5>
+          </div>
+          <div class="dashboard_overview_card">
+            <i class="fas fa-user icon_1"></i>
+            <p>اعضای تیم</p>
+            <h5>13</h5>
+          </div>
+          <div class="dashboard_overview_card">
+            <i class="fas fa-suitcase icon_1"></i>
+            <p>وظایف انجام شده</p>
+            <h5>22</h5>
+          </div>
+          <div class="dashboard_overview_card">
+            <i class="fas fa-search icon_1"></i>
+            <p>تحویل داده شده</p>
+            <h5>24</h5>
+          </div>
+          <div class="dashboard_overview_card">
+            <i class="fas fa-globe-americas icon_1"></i>
+            <p>اخبار رویدادها</p>
+            <h5>17</h5>
+          </div>
+        </div>
+      </div>
+      <div class="charts_stories">
+        <div class="burnsown_chart_container">
+          <h1>چارت Burnsown</h1>
+          <div class="burnsown_chart">
+            <canvas id="myChart" height="100"></canvas>
+          </div>
+        </div>
+        <div class="dashboard_stories_container">
+          <div class="title">
+            <h1>وضعیت پیشروی</h1>
+            <a href="#" class="btn">دیدن همه</a>
+          </div>
+          <div class="dashboard_stories">
+            <table>
+              <tr>
+                <td>s11</td>
+                <td>Landing page</td>
+                <td>تحویل داده شد</td>
+                <td>12</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+              <tr>
+                <td>s32</td>
+                <td>Onboarding</td>
+                <td>تحویل داده شد</td>
+                <td>3</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+              <tr>
+                <td>s12</td>
+                <td>User profile</td>
+                <td>تایید شد</td>
+                <td>9</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+              <tr>
+                <td>s21</td>
+                <td>Setting</td>
+                <td>تایید شد</td>
+                <td>3</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="team_members_container">
+        <div class="title">
+          <h1>اعضای تیم</h1>
+          <a href="#" class="btn">افزودن عضو</a>
+        </div>
+        <div class="team_members">
+          <div class="team_member">
+            <div class="imgBx">
+              <img src="assets/images/g1.jpg" alt="Member" />
+            </div>
+            <div class="member_content">
+              <h2>زهرا</h2>
+              <p>35 استوری</p>
+            </div>
+          </div>
+          <div class="team_member">
+            <div class="imgBx">
+              <img src="assets/images/b1.jpg" alt="Member" />
+            </div>
+            <div class="member_content">
+              <h2>حسین</h2>
+              <p>30 استوری</p>
+            </div>
+          </div>
+          <div class="team_member">
+            <div class="imgBx">
+              <img src="assets/images/b2.jpg" alt="Member" />
+            </div>
+            <div class="member_content">
+              <h2>علیرضا</h2>
+              <p>25 استوری</p>
+            </div>
+          </div>
+          <div class="team_member">
+            <div class="imgBx">
+              <img src="assets/images/b3.jpg" alt="Member" />
+            </div>
+            <div class="member_content">
+              <h2>میلاد</h2>
+              <p>15 استوری</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="left_sidebar">
+      <div class="epics_container">
+        <div class="title">
+          <h1>فعالیت ها</h1>
+          <a href="#" class="btn">دیدن همه</a>
+        </div>
+        <div class="epics">
+          <div class="epic">
+            <div class="imgBx_s green">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="epic_info">
+              <h2>پنل ادمین</h2>
+              <p>دیزاین و توسعه</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <!-- second epic -->
+          <div class="epic">
+            <div class="imgBx_s red">
+              <i class="fas fa-address-card"></i>
+            </div>
+            <div class="epic_info">
+              <h2>افزودن آیتم</h2>
+              <p>توسعه</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <!-- third epic -->
+          <div class="epic">
+            <div class="imgBx_s violet">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="epic_info">
+              <h2>موبایل آنبردینگ</h2>
+              <p>دیزاین</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <!-- fourth epic  -->
+          <div class="epic">
+            <div class="imgBx_s blue">
+              <i class="fab fa-phoenix-squadron"></i>
+            </div>
+            <div class="epic_info">
+              <h2>موبایل MVP</h2>
+              <p>دیزاین</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <!-- fifth epic -->
+          <div class="epic">
+            <div class="imgBx_s purple">
+              <i class="fas fa-qrcode"></i>
+            </div>
+            <div class="epic_info">
+              <h2>اسکن کد QR</h2>
+              <p>جست و جو</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+      <div class="project_statistic_container">
+        <div class="title">
+          <h1>پروژه ، آمار</h1>
+        </div>
+        <div class="project_statistics">
+          <!-- first project_statistic -->
+          <div class="project_statistic">
+            <h2>پروژه ها</h2>
+            <p>درصد تکمیل</p>
+            <div class="progress">
+              <div class="stat_progress_cover">
+                <div id="project"></div>
+              </div>
+              <h2>75%</h2>
+            </div>
+          </div>
+          <!-- second project_statistic -->
+          <div class="project_statistic">
+            <h2>بیزینس</h2>
+            <p>اهداف</p>
+            <div class="progress">
+              <div class="stat_progress_cover">
+                <div id="business"></div>
+              </div>
+              <h2>40%</h2>
+            </div>
+          </div>
+
+          <!-- third project_statistic -->
+          <div class="project_statistic">
+            <h2>بودجه</h2>
+            <p>استقاده شده</p>
+            <div class="progress">
+              <div class="stat_progress_cover">
+                <div id="budget"></div>
+              </div>
+              <h2>60%</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn project_details">جزئیات پروژه</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chart.js"></script>
+  </body>
+</html>
